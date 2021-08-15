@@ -64,7 +64,7 @@
 		<dependency>
 			<groupId>net.milkbowl.vault</groupId>
 			<artifactId>VaultAPI</artifactId>
-			<version>1.5</version>
+			<version>1.7</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -74,36 +74,8 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/lib/Votifier.jar</systemPath>
 		</dependency>
-		<dependency>
-			<groupId>lib.PatPeter.SQLibrary</groupId>
-			<artifactId>SQLibrary</artifactId>
-			<version>7.1</version>
-		</dependency>
+
 	</dependencies>
-	<!-- Reporting -->
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<effort>Max</effort>
-					<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
-					<xmlOutput>true</xmlOutput>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>2.7.1</version>
-				<configuration>
-					<minimumTokens>50</minimumTokens>
-					<ignoreIdentifiers>true</ignoreIdentifiers>
-				</configuration>
-			</plugin>
-		</plugins>
-	</reporting>
 	<!-- Build. -->
 	<build>
 		<defaultGoal>compile package</defaultGoal>
